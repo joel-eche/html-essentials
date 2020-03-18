@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gallery</title>
+    <h1 style="border-style:solid;margin: 0;padding: 20px">Page Title</h1>
+    <div style="border-style:solid;border-top: 0px;padding: 20px">
+      <a style="border-right:solid;border-color: black;padding-right: 3px" href="#Home">Home</a>
+      <a style="border-right:solid;border-color: black;padding-right: 3px" href="#Products">Products</a>
+      <a style="border-right:solid;border-color: black;padding-right: 3px" href="#Company">Company</a>
+      <a href="#Blog">Blog</a>
+    </div>
   </head>
-  <body></body>
+  <script>
+
+    for (let i=0;i<50;i++)
+    {
+      let img = document.createElement("IMG");
+      img.setAttribute("src","https://i.pinimg.com/originals/7d/aa/d5/7daad52d070f2e222d7096bb2c897b46.png");
+      img.setAttribute("height","200");
+      img.setAttribute("alt","200");
+      img.setAttribute("style","border-style: solid;margin:70px");
+      document.body.appendChild(img);
+    }
+  </script>
+  <body style="text-align: center;margin: 0px;padding-right: 50px;padding-left: 50px">
+  </body>
+  <footer style="margin: 20px">
+    <a style="border-right:solid;border-color: black;padding-right: 3px" href="#Facebook">Facebook</a>
+    <a style="border-right:solid;border-color: black;padding-right: 3px" href="#Twitter">Twitter</a>
+    <a style="border-right:solid;border-color: black;padding-right: 3px" href="#Instagram">Instagram</a>
+    <a href="#Tinder">Tinder</a>
+  </footer>
 </html>
