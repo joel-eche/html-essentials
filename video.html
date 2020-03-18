@@ -5,6 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Video</title>
+    <style>
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .column_nav {
+        float: left;
+        width: 33.33%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .nav_column_left {
+        text-align: left;
+      }
+      .nav_column_center {
+        text-align: center;
+      }
+      .nav_column_right {
+        text-align: right;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="row">
+        <div class="column_nav nav_column_left">
+          <a href="#">Home</a>
+        </div>
+        <div class="column_nav nav_column_center">
+          <form method="GET" id="get_search">
+            <input placeholder="Buscar" />
+            <button form="get_search" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="column_nav nav_column_right">
+          <a href="#">Link</a>
+          <a>|</a>
+          <a href="#">Link</a>
+          <a>|</a>
+          <a href="#">Link</a>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <section>
+        <h4>Some Title</h4>
+        <ul>
+          <li>Item One</li>
+          <li>Item Two</li>
+          <li>Item Three</li>
+        </ul>
+        <br />
+        <h4>Some Title</h4>
+        <ul>
+          <li>Item One</li>
+          <li>Item Two</li>
+          <li>Item Three</li>
+        </ul>
+        <br />
+        <h4>Some Title</h4>
+        <ul>
+          <li>Item One</li>
+          <li>Item Two</li>
+          <li>Item Three</li>
+        </ul>
+        <hr />
+        <footer>
+          <a href="#">Terms</a>
+          <a>|</a>
+          <a href="#">Privacy</a>
+          <a>|</a>
+          <a href="#">Safety</a>
+          <br />
+          Copyright 2020
+        </footer>
+      </section>
+      <main>
+        <img aria-placeholder="A big Add" />
+        <section>
+          <div class="row">
+            <div>
+              <p><img /> Some subtitl</p>
+            </div>
+            <div>
+              <p><img /> Some subtitl</p>
+            </div>
+            <div>
+              <p><img /> Some subtitl</p>
+            </div>
+            <div>
+              <p><img /> Some subtitl</p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <p><img /> Some subtitl</p>
+            </div>
+            <div>
+              <p><img /> Some subtitl</p>
+            </div>
+            <div>
+              <p><img /> Some subtitl</p>
+            </div>
+            <div>
+              <p><img /> Some subtitl</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
