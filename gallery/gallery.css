@@ -33,13 +33,16 @@
     justify-content: center;
 }
 
+.main {
+    margin: 3vh 3vh 10vh 3vh;
+}
 
 .img {
     border-radius: 5px;
     box-shadow: 1px 0px 0px -1px  rgba(0,0,0,0.75);
     justify-content: space-evenly;
     display: flex;
-    margin: 3vh;
+    margin: 3vh 1vh 3vh 1vh;
     width: 40vh;
 }
 
