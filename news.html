@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>News</title>
-  </head>
-  <body></body>
+</head>
+<style>
+    .inline-nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .inline-nav li::after {
+        content: ' | ';
+        font-weight: bold;
+    }
+
+    .inline-nav ul li:last-child::after {
+        content: '';
+    }
+
+    .inline-nav li {
+        display: inline-block;
+    }
+
+    .ads img {
+        height: 64px;
+        width: 64px;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAAPUlEQVR42u3OMQEAAAgDINe/lM00xh5IQPamKgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLtwAMUNnAB1DdOQAAAAABJRU5ErkJggg==');
+    }
+</style>
+
+<body>
+    <!-- STARTS HEADER -->
+    <header>
+        <nav class="inline-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div>
+                <input type="text" placeholder="search">
+            </div>
+        </nav>
+    </header>
+    <!-- ENDS HEADER -->
+    <main>
+        <!-- SIDE LINKS -->
+        <nav>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+                <li><a href="#">Category 4</a></li>
+                <li><a href="#">Category 5</a></li>
+            </ul>
+        </nav>
+        <!-- ENDS SIDE LINKS -->
+        <!-- MAIN CONTENT -->
+        <article>
+            <div class="chapter">
+                <h1>A Big Title</h1>
+                <h2>A Subtitle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus nihil laudantium minus
+                    perspiciatis rerum obcaecati quae, distinctio hic quos debitis autem libero labore delectus.</p>
+            </div>
+            <div class="chapter">
+                <h1>A Big Title</h1>
+                <h2>A Subtitle</h2>
+                <p>Excepturi ad inventore reprehenderit sit magnam nobis veritatis error nam ullam, fugiat culpa ipsum
+                    ex, cupiditate repellendus mollitia, obcaecati earum provident qui maiores dignissimos. A.</p>
+            </div>
+        </article>
+        <!-- ENDS MAIN CONTENT -->
+        <!-- SPACE FOR ADS -->
+        <aside class="ads">
+            <div>
+                <img alt="">
+                <div>
+                    <h4>lorem2</h4>
+                    <p>lorem10</p>
+                </div>
+            </div>
+            <div>
+                <img alt="">
+                <div>
+                    <h4>lorem2</h4>
+                    <p>lorem10</p>
+                </div>
+            </div>
+            <div>
+                <img alt="">
+                <div>
+                    <h4>lorem2</h4>
+                    <p>lorem10</p>
+                </div>
+            </div>
+            <div>
+                <img alt="">
+                <div>
+                    <h4>lorem2</h4>
+                    <p>lorem10</p>
+                </div>
+            </div>
+            <div>
+                <img alt="">
+                <div>
+                    <h4>lorem2</h4>
+                    <p>lorem10</p>
+                </div>
+            </div>
+        </aside>
+        <!-- ENDS ADS SPACE -->
+    </main>
+    <!-- STARTS FOOTER -->
+    <footer>
+        <nav class="inline-nav">
+            Follow us
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Tinder</a></li>
+            </ul>
+        </nav>
+        <div>
+            Stay In Touch! Join our Newsletter.
+            <div>
+                <input type="text" placeholder="Enter Email">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+
 </html>
