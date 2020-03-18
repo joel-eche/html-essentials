@@ -1,10 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>News</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>News</title>
+  <style>
+    html body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .vert ul {
+      list-style: none;
+      padding: 0;
+      margin-left: -4px;
+    }
+
+    .vert ul li {
+      display: inline;
+      white-space: nowrap;
+      margin: 0 0.3rem;
+    }
+
+    .vert ul li:not(:first-child)::before {
+      position: relative;
+      content: "  |  ";
+      left: -0.3rem;
+    }
+
+    .border {
+      border-top: black 3px solid;
+      border-bottom: black 3px solid;
+    }
+
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+    }
+
+    #left-side {
+      display: inline-block;
+      text-align: left;
+      width: 40%;
+    }
+
+    #right-side {
+      display: inline-block;
+      width: 59%;
+    }
+
+    .inputround {
+      border-radius: 15px;
+      border: 2px solid black;
+      padding: 10px;
+      width: 150px;
+      height: 10px;
+    }
+
+    .button {
+      background-color: crimson;
+      border: 1px crimson solid;
+      color: white;
+      padding: 5px 10px;
+    }
+
+    .enter {
+      border: 1px crimson solid;
+      padding: 5px 10px;
+    }
+
+    input {
+      margin: 0;
+      padding: 0;
+    }
+
+    #left-panel {
+      display: inline-block;
+      width: 25%;
+      vertical-align: top;
+    }
+
+    #center-panel {
+      display: inline-block;
+      width: 50%
+    }
+
+    #right-panel {
+      display: inline-block;
+      vertical-align: top;
+      width: 24%;
+    }
+
+    .right-article {
+      padding: 20px;
+    }
+
+    .right-article .picture {
+      width: 30%;
+      display: inline-block;
+    }
+
+    .right-article .picture img {
+      width: 100%;
+    }
+
+    .right-article .texto {
+      width: 50%;
+      padding-left: 10px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .menulateral {
+      padding: 30px;
+    }
+
+    .menulateral ul {
+      list-style: none;
+    }
+
+    .menulateral ul li {
+      padding-top: 30px;
+    }
+  </style>
+</head>
+<header>
+  <nav class="vert border" style="width: 100%;">
+    <div style="width:85%; display: inline-block;">
+      <ul style="margin-left: 1rem;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div id="search" style="display: inline-block;">
+      <input type="text" class="inputround" placeholder="search" />
+    </div>
+  </nav>
+</header>
+
+<body>
+  <section id="left-panel">
+    <div class="menulateral">
+      <ul>
+        <li><a href="#">Category 1</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li><a href="#">Category 3</a></li>
+        <li><a href="#">Category 4</a></li>
+        <li><a href="#">Category 5</a></li>
+      </ul>
+    </div>
+  </section>
+  <section id="center-panel">
+    <article id="1">
+      <h1>A Big Title</h1>
+      <h3>A Subtitle</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus. Proin mollis pellentesque purus,
+        ut
+        commodo odio sagittis vel. Vivamus ac sapien ut nisl convallis iaculis at sit amet lorem. Aliquam sit amet
+        pulvinar
+        neque. Vivamus porta sapien et nulla pharetra, mattis rutrum magna eleifend. Duis tristique ipsum rutrum,
+        vehicula
+        orci
+        sit amet, vestibulum leo. Mauris congue elit nisl, ac consectetur neque consectetur eu. Pellentesque habitant
+        morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas.
+      </p>
+    </article>
+    <article id="2">
+      <h1>A Big Title</h1>
+      <h3>A Subtitle</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus. Proin mollis pellentesque purus,
+        ut
+        commodo odio sagittis vel. Vivamus ac sapien ut nisl convallis iaculis at sit amet lorem. Aliquam sit amet
+        pulvinar
+        neque. Vivamus porta sapien et nulla pharetra, mattis rutrum magna eleifend. Duis tristique ipsum rutrum,
+        vehicula
+        orci
+        sit amet, vestibulum leo. Mauris congue elit nisl, ac consectetur neque consectetur eu. Pellentesque habitant
+        morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas.
+      </p>
+    </article>
+    <article id="3">
+      <h1>A Big Title</h1>
+      <h3>A Subtitle</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus. Proin mollis pellentesque purus,
+        ut
+        commodo odio sagittis vel. Vivamus ac sapien ut nisl convallis iaculis at sit amet lorem. Aliquam sit amet
+        pulvinar
+        neque. Vivamus porta sapien et nulla pharetra, mattis rutrum magna eleifend. Duis tristique ipsum rutrum,
+        vehicula
+        orci
+        sit amet, vestibulum leo. Mauris congue elit nisl, ac consectetur neque consectetur eu. Pellentesque habitant
+        morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas.
+      </p>
+    </article>
+    <article id="4">
+      <h1>A Big Title</h1>
+      <h3>A Subtitle</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus. Proin mollis pellentesque purus,
+        ut
+        commodo odio sagittis vel. Vivamus ac sapien ut nisl convallis iaculis at sit amet lorem. Aliquam sit amet
+        pulvinar
+        neque. Vivamus porta sapien et nulla pharetra, mattis rutrum magna eleifend. Duis tristique ipsum rutrum,
+        vehicula
+        orci
+        sit amet, vestibulum leo. Mauris congue elit nisl, ac consectetur neque consectetur eu. Pellentesque habitant
+        morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas.
+      </p>
+    </article>
+    <article id="5">
+      <h1>A Big Title</h1>
+      <h3>A Subtitle</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus. Proin mollis pellentesque purus,
+        ut
+        commodo odio sagittis vel. Vivamus ac sapien ut nisl convallis iaculis at sit amet lorem. Aliquam sit amet
+        pulvinar
+        neque. Vivamus porta sapien et nulla pharetra, mattis rutrum magna eleifend. Duis tristique ipsum rutrum,
+        vehicula
+        orci
+        sit amet, vestibulum leo. Mauris congue elit nisl, ac consectetur neque consectetur eu. Pellentesque habitant
+        morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas.
+      </p>
+    </article>
+  </section>
+  <section id="right-panel">
+    <article id="a" class="right-article">
+      <div class="picture">
+        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_medium.png" border="2" />
+      </div>
+      <div class="texto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus.</p>
+      </div>
+    </article>
+    <article id="b" class="right-article">
+      <div class="picture">
+        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_medium.png" border="2" />
+      </div>
+      <div class="texto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus.</p>
+      </div>
+    </article>
+    <article id="c" class="right-article">
+      <div class="picture">
+        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_medium.png" border="2" />
+      </div>
+      <div class="texto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus.</p>
+      </div>
+    </article>
+    <article id="d" class="right-article">
+      <div class="picture">
+        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_medium.png" border="2" />
+      </div>
+      <div class="texto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus.</p>
+      </div>
+    </article>
+    <article id="e" class="right-article">
+      <div class="picture">
+        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_medium.png" border="2" />
+      </div>
+      <div class="texto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus.</p>
+      </div>
+    </article>
+    <article id="f" class="right-article">
+      <div class="picture">
+        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_medium.png" border="2" />
+      </div>
+      <div class="texto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a congue lacus.</p>
+      </div>
+    </article>
+  </section>
+</body>
+
+<footer class="border">
+  <div id="left-side">
+    <span style="margin-left: 2rem;">Follow us </span>
+    <div class="vert" style="display: inline-block;">
+      <ul>
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Tinder</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="right-side">
+    <span>Stay In Touch! Join our Newsletter</span>
+    <div style="display: inline-block; margin-left: 1rem;">
+      <input class="enter" type="text" placeholder="Enter Email"><input class="button" type="submit" value="Subscribe">
+    </div>
+  </div>
+</footer>
+
 </html>
