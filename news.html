@@ -1,10 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>News</title>
+    <style>
+      form.example {
+        float:right
+      }
+      .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  float:left;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar2{
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  float: right;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+
+ 
+
+    </style>
+      
+      
+    
   </head>
-  <body></body>
+  <body>
+    <div class="topbar">
+      <a href="#">Home</a> |
+      <a href="#">Products</a> |
+      <a href="#">Company</a> |
+      <a href="#">Blog</a>
+    </div>
+    <form class="example" action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    
+    <hr>
+
+    <div class="sidebar">
+      <a class="active" href="#">Categoría 1</a>
+      <a href="#">Categoría 2</a>
+      <a href="#">Categoría 3</a>
+      <a href="#">Categoría 4</a>
+      <a href="#">Categoría 5</a>
+    </div>
+    <div class="sidebar2">
+      <p style="float: left;"><img src="https://source.unsplash.com/random/100x100" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aut laudantium totam</p>
+      <p style="float: left;"><img src="https://source.unsplash.com/random/100x100" alt="">Lorem ipsum dol</p>
+      <p style="float: left;"><img src="https://source.unsplash.com/random/100x100" alt="">uu</p>
+      <p style="float: left;"><img src="https://source.unsplash.com/random/100x100" alt="">uu</p>
+    </div>
+    <div style="text-align:center">
+      <h1>A Big Title</h1>
+      <h2>A subtitle</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis aspernatur consequatur magni alias, quis accusamus veritatis quae! Inventore facilis laborum aut recusandae tempore saepe similique praesentium, quia debitis nobis eveniet enim corporis sapiente dignissimos, est et voluptatibus, eius ullam accusantium dicta. Necessitatibus esse, nobis tempore nihil deleniti impedit mollitia ex facere inventore soluta, sequi eius. Provident ea sint libero dolore maiores vitae voluptatibus nulla, vel odio aut laboriosam ipsam sapiente laudantium. In dolorem assumenda iure! Nisi quis fugit at eligendi laboriosam debitis cupiditate perspiciatis deleniti. Omnis vero architecto nobis. Nobis dolore aut minima dolorem! Debitis aliquid deserunt corporis doloribus.</p>
+    </div>
+    <footer>
+      <p>Follow us</p>
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Tinder</a>
+    </footer>
+    
+    
+    
+  </body>
 </html>

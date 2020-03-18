@@ -5,6 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Video</title>
+    <style>
+ .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  float:left;
+  position:fixed;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: auto;
+
+}
+.showcase {
+    grid-area: showcase;
+    min-height: 200px;
+    background: url(https://image.ibb.co/kYJK8x/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+  }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="topbar">
+      <section><p style="float: left;"><img src="https://source.unsplash.com/random/50x50"><p><a href="#">Home</a></p></section>
+    </div>
+    <form class="example" action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+    </form>
+    <div class="sidebar">
+      <a href="#">Categoría 1</a><ul><l1>lista1</l1><l1>lista 2</l1></ul>
+      <a href="#">Categoría 2</a><ul><l1>lista1</l1><l1>lista 2</l1></ul>
+      <a href="#">Categoría 3</a><ul><l1>lista1</l1><l1>lista 2</l1></ul>
+      <a href="#">Categoría 4</a><ul><l1>lista1</l1><l1>lista 2</l1></ul>
+      <a href="#">Categoría 5</a><ul><l1>lista1</l1><l1>lista 2</l1></ul>
+      <hr>
+      <a href="#">Home</a> |
+      <a href="#">Products</a> |
+      <a href="#">Company</a> |
+    </div>
+    <section class="top-container">
+                    <header class="showcase">
+                        <h1>Big Add</h1>
+                    </header>
+                    </section>
+    <section class="Videos">
+      <iframe width="420" height="415"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+      
+
+  </body>
 </html>
